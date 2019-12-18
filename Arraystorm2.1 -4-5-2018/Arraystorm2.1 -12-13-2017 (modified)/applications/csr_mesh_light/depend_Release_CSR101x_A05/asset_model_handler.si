@@ -1,0 +1,425 @@
+   1                 		.file	"asset_model_handler.c"
+   2                 		.variant xap2+
+   3                 	
+   4                 		.small
+   5                 	
+   6                 		.section	.debug_abbrev,"",@progbits
+   7                 	.Ldebug_abbrev0:
+   8                 		.section	.debug_info,"",@progbits
+   9                 	.Ldebug_info0:
+  10                 		.section	.debug_line,"",@progbits
+  11                 	.Ldebug_line0:
+  12 0000 00 00 00 00 		.text
+  12      00 02 00 00 
+  12      00 00 01 01 
+  12      FB 0E 0D 00 
+  12      01 01 01 01 
+  13                 	.Ltext0:
+  14                 		.comm light_model_groups, 4, 1
+  15                 	
+  16                 		.comm power_model_groups, 4, 1
+  17                 	
+  18                 		.comm attention_model_groups, 4, 1
+  19                 	
+  20                 		.comm data_model_groups, 4, 1
+  21                 	
+  22                 		.comm lot_model_groups, 4, 1
+  23                 	
+  24                 		.comm g_app_nvm_offset, 1, 1
+  25                 	
+  26                 		.comm g_app_nvm_fresh, 1, 1
+  27                 	
+  28                 		.comm g_cskey_flags, 1, 1
+  29                 	
+  30                 	.Letext0:
+  31                 		.file 1 "C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/types.h"
+  32                 		.file 2 "./app_mesh_handler.h"
+  33                 		.file 3 "./main_app.h"
+  34                 		.section	.debug_info
+  35 0000 00 00 01 13 		.4byte	0x113
+  36 0002 00 02       		.2byte	0x2
+  37 0003 00 00 00 00 		.4byte	.Ldebug_abbrev0
+  38 0005 04          		.1byte	0x4
+  39 0005 01          		.1byte	0x1
+  40 0006 00 00 00 00 		.4byte	.LASF18
+  41 0008 01          		.1byte	0x1
+  42 0008 00 00 00 00 		.4byte	.LASF19
+  43 000a 00 00 00 00 		.4byte	.LASF20
+  44 000c 00 00 00 00 		.4byte	.Ltext0
+  45 000e 00 00 00 00 		.4byte	.Letext0
+  46 0010 00 00 00 00 		.4byte	.Ldebug_line0
+  47 0012 02          		.1byte	0x2
+  48 0013 02          		.1byte	0x2
+  49 0013 08          		.1byte	0x8
+  50 0014 00 00 00 00 		.4byte	.LASF0
+  51 0016 03          		.1byte	0x3
+  52 0016 00 00 00 00 		.4byte	.LASF6
+  53 0018 01          		.1byte	0x1
+  54 0019 21          		.1byte	0x21
+  55 0019 00 00 00 37 		.4byte	0x37
+  56 001b 02          		.1byte	0x2
+  57 001c 02          		.1byte	0x2
+  58 001c 07          		.1byte	0x7
+  59 001d 00 00 00 00 		.4byte	.LASF1
+  60 001f 02          		.1byte	0x2
+  61 001f 04          		.1byte	0x4
+  62 0020 07          		.1byte	0x7
+  63 0020 00 00 00 00 		.4byte	.LASF2
+  64 0022 02          		.1byte	0x2
+  65 0023 02          		.1byte	0x2
+  66 0023 06          		.1byte	0x6
+  67 0024 00 00 00 00 		.4byte	.LASF3
+  68 0026 02          		.1byte	0x2
+  69 0026 02          		.1byte	0x2
+  70 0027 05          		.1byte	0x5
+  71 0027 00 00 00 00 		.4byte	.LASF4
+  72 0029 02          		.1byte	0x2
+  73 002a 04          		.1byte	0x4
+  74 002a 05          		.1byte	0x5
+  75 002b 00 00 00 00 		.4byte	.LASF5
+  76 002d 03          		.1byte	0x3
+  77 002d 00 00 00 00 		.4byte	.LASF7
+  78 002f 01          		.1byte	0x1
+  79 0030 2C          		.1byte	0x2c
+  80 0030 00 00 00 65 		.4byte	0x65
+  81 0032 02          		.1byte	0x2
+  82 0033 02          		.1byte	0x2
+  83 0033 07          		.1byte	0x7
+  84 0034 00 00 00 00 		.4byte	.LASF8
+  85 0036 04          		.1byte	0x4
+  86 0036 02          		.1byte	0x2
+  87 0037 07          		.1byte	0x7
+  88 0037 05          		.1byte	0x5
+  89 0038 00 00 00 2C 		.4byte	0x2c
+  90 003a 00 00 00 7F 		.4byte	0x7f
+  91 003c 06          		.1byte	0x6
+  92 003c 00 00 00 6C 		.4byte	0x6c
+  93 003e 03          		.1byte	0x3
+  94 003f 00          		.1byte	0x0
+  95 003f 02          		.1byte	0x2
+  96 0040 02          		.1byte	0x2
+  97 0040 08          		.1byte	0x8
+  98 0041 00 00 00 00 		.4byte	.LASF9
+  99 0043 07          		.1byte	0x7
+ 100 0043 00 00 00 00 		.4byte	.LASF10
+ 101 0045 02          		.1byte	0x2
+ 102 0046 16          		.1byte	0x16
+ 103 0046 00 00 00 6F 		.4byte	0x6f
+ 104 0048 01          		.1byte	0x1
+ 105 0049 05          		.1byte	0x5
+ 106 0049 03          		.1byte	0x3
+ 107 004a 00 00 00 00 		.4byte	light_model_groups
+ 108 004c 07          		.1byte	0x7
+ 109 004c 00 00 00 00 		.4byte	.LASF11
+ 110 004e 02          		.1byte	0x2
+ 111 004f 17          		.1byte	0x17
+ 112 004f 00 00 00 6F 		.4byte	0x6f
+ 113 0051 01          		.1byte	0x1
+ 114 0052 05          		.1byte	0x5
+ 115 0052 03          		.1byte	0x3
+ 116 0053 00 00 00 00 		.4byte	power_model_groups
+ 117 0055 07          		.1byte	0x7
+ 118 0055 00 00 00 00 		.4byte	.LASF12
+ 119 0057 02          		.1byte	0x2
+ 120 0058 18          		.1byte	0x18
+ 121 0058 00 00 00 6F 		.4byte	0x6f
+ 122 005a 01          		.1byte	0x1
+ 123 005b 05          		.1byte	0x5
+ 124 005b 03          		.1byte	0x3
+ 125 005c 00 00 00 00 		.4byte	attention_model_groups
+ 126 005e 07          		.1byte	0x7
+ 127 005e 00 00 00 00 		.4byte	.LASF13
+ 128 0060 02          		.1byte	0x2
+ 129 0061 19          		.1byte	0x19
+ 130 0061 00 00 00 6F 		.4byte	0x6f
+ 131 0063 01          		.1byte	0x1
+ 132 0064 05          		.1byte	0x5
+ 133 0064 03          		.1byte	0x3
+ 134 0065 00 00 00 00 		.4byte	data_model_groups
+ 135 0067 07          		.1byte	0x7
+ 136 0067 00 00 00 00 		.4byte	.LASF14
+ 137 0069 02          		.1byte	0x2
+ 138 006a 1A          		.1byte	0x1a
+ 139 006a 00 00 00 6F 		.4byte	0x6f
+ 140 006c 01          		.1byte	0x1
+ 141 006d 05          		.1byte	0x5
+ 142 006d 03          		.1byte	0x3
+ 143 006e 00 00 00 00 		.4byte	lot_model_groups
+ 144 0070 07          		.1byte	0x7
+ 145 0070 00 00 00 00 		.4byte	.LASF15
+ 146 0072 03          		.1byte	0x3
+ 147 0073 A2          		.1byte	0xa2
+ 148 0073 00 00 00 2C 		.4byte	0x2c
+ 149 0075 01          		.1byte	0x1
+ 150 0076 05          		.1byte	0x5
+ 151 0076 03          		.1byte	0x3
+ 152 0077 00 00 00 00 		.4byte	g_app_nvm_offset
+ 153 0079 07          		.1byte	0x7
+ 154 0079 00 00 00 00 		.4byte	.LASF16
+ 155 007b 03          		.1byte	0x3
+ 156 007c A3          		.1byte	0xa3
+ 157 007c 00 00 00 5A 		.4byte	0x5a
+ 158 007e 01          		.1byte	0x1
+ 159 007f 05          		.1byte	0x5
+ 160 007f 03          		.1byte	0x3
+ 161 0080 00 00 00 00 		.4byte	g_app_nvm_fresh
+ 162 0082 07          		.1byte	0x7
+ 163 0082 00 00 00 00 		.4byte	.LASF17
+ 164 0084 03          		.1byte	0x3
+ 165 0085 A4          		.1byte	0xa4
+ 166 0085 00 00 00 2C 		.4byte	0x2c
+ 167 0087 01          		.1byte	0x1
+ 168 0088 05          		.1byte	0x5
+ 169 0088 03          		.1byte	0x3
+ 170 0089 00 00 00 00 		.4byte	g_cskey_flags
+ 171 008b 00          		.1byte	0x0
+ 172                 		.section	.debug_abbrev
+ 173 0000 01          		.1byte	0x1
+ 174 0000 11          		.1byte	0x11
+ 175 0001 01          		.1byte	0x1
+ 176 0001 25          		.1byte	0x25
+ 177 0002 0E          		.1byte	0xe
+ 178 0002 13          		.1byte	0x13
+ 179 0003 0B          		.1byte	0xb
+ 180 0003 03          		.1byte	0x3
+ 181 0004 0E          		.1byte	0xe
+ 182 0004 1B          		.1byte	0x1b
+ 183 0005 0E          		.1byte	0xe
+ 184 0005 11          		.1byte	0x11
+ 185 0006 01          		.1byte	0x1
+ 186 0006 12          		.1byte	0x12
+ 187 0007 01          		.1byte	0x1
+ 188 0007 10          		.1byte	0x10
+ 189 0008 06          		.1byte	0x6
+ 190 0008 00          		.1byte	0x0
+ 191 0009 00          		.1byte	0x0
+ 192 0009 02          		.1byte	0x2
+ 193 000a 24          		.1byte	0x24
+ 194 000a 00          		.1byte	0x0
+ 195 000b 0B          		.1byte	0xb
+ 196 000b 0B          		.1byte	0xb
+ 197 000c 3E          		.1byte	0x3e
+ 198 000c 0B          		.1byte	0xb
+ 199 000d 03          		.1byte	0x3
+ 200 000d 0E          		.1byte	0xe
+ 201 000e 00          		.1byte	0x0
+ 202 000e 00          		.1byte	0x0
+ 203 000f 03          		.1byte	0x3
+ 204 000f 16          		.1byte	0x16
+ 205 0010 00          		.1byte	0x0
+ 206 0010 03          		.1byte	0x3
+ 207 0011 0E          		.1byte	0xe
+ 208 0011 3A          		.1byte	0x3a
+ 209 0012 0B          		.1byte	0xb
+ 210 0012 3B          		.1byte	0x3b
+ 211 0013 0B          		.1byte	0xb
+ 212 0013 49          		.1byte	0x49
+ 213 0014 13          		.1byte	0x13
+ 214 0014 00          		.1byte	0x0
+ 215 0015 00          		.1byte	0x0
+ 216 0015 04          		.1byte	0x4
+ 217 0016 24          		.1byte	0x24
+ 218 0016 00          		.1byte	0x0
+ 219 0017 0B          		.1byte	0xb
+ 220 0017 0B          		.1byte	0xb
+ 221 0018 3E          		.1byte	0x3e
+ 222 0018 0B          		.1byte	0xb
+ 223 0019 00          		.1byte	0x0
+ 224 0019 00          		.1byte	0x0
+ 225 001a 05          		.1byte	0x5
+ 226 001a 01          		.1byte	0x1
+ 227 001b 01          		.1byte	0x1
+ 228 001b 49          		.1byte	0x49
+ 229 001c 13          		.1byte	0x13
+ 230 001c 01          		.1byte	0x1
+ 231 001d 13          		.1byte	0x13
+ 232 001d 00          		.1byte	0x0
+ 233 001e 00          		.1byte	0x0
+ 234 001e 06          		.1byte	0x6
+ 235 001f 21          		.1byte	0x21
+ 236 001f 00          		.1byte	0x0
+ 237 0020 49          		.1byte	0x49
+ 238 0020 13          		.1byte	0x13
+ 239 0021 2F          		.1byte	0x2f
+ 240 0021 0B          		.1byte	0xb
+ 241 0022 00          		.1byte	0x0
+ 242 0022 00          		.1byte	0x0
+ 243 0023 07          		.1byte	0x7
+ 244 0023 34          		.1byte	0x34
+ 245 0024 00          		.1byte	0x0
+ 246 0024 03          		.1byte	0x3
+ 247 0025 0E          		.1byte	0xe
+ 248 0025 3A          		.1byte	0x3a
+ 249 0026 0B          		.1byte	0xb
+ 250 0026 3B          		.1byte	0x3b
+ 251 0027 0B          		.1byte	0xb
+ 252 0027 49          		.1byte	0x49
+ 253 0028 13          		.1byte	0x13
+ 254 0028 3F          		.1byte	0x3f
+ 255 0029 0C          		.1byte	0xc
+ 256 0029 02          		.1byte	0x2
+ 257 002a 0A          		.1byte	0xa
+ 258 002a 00          		.1byte	0x0
+ 259 002b 00          		.1byte	0x0
+ 260 002b 00          		.1byte	0x0
+ 261                 		.section	.debug_pubnames,"",@progbits
+ 262 0000 00 00 00 BD 		.4byte	0xbd
+ 263 0002 00 02       		.2byte	0x2
+ 264 0003 00 00 00 00 		.4byte	.Ldebug_info0
+ 265 0005 00 00 01 17 		.4byte	0x117
+ 266 0007 00 00 00 86 		.4byte	0x86
+ 267 0009 6C 69 67 68 		.ascii "light_model_groups\000"
+ 267      74 5F 6D 6F 
+ 267      64 65 6C 5F 
+ 267      67 72 6F 75 
+ 267      70 73 00 
+ 268 0012 00 00 00 98 		.4byte	0x98
+ 269 0014 70 6F 77 65 		.ascii "power_model_groups\000"
+ 269      72 5F 6D 6F 
+ 269      64 65 6C 5F 
+ 269      67 72 6F 75 
+ 269      70 73 00 
+ 270 001e 00 00 00 AA 		.4byte	0xaa
+ 271 0020 61 74 74 65 		.ascii "attention_model_groups\000"
+ 271      6E 74 69 6F 
+ 271      6E 5F 6D 6F 
+ 271      64 65 6C 5F 
+ 271      67 72 6F 75 
+ 272 002b 00 00 00 BC 		.4byte	0xbc
+ 273 002d 64 61 74 61 		.ascii "data_model_groups\000"
+ 273      5F 6D 6F 64 
+ 273      65 6C 5F 67 
+ 273      72 6F 75 70 
+ 273      73 00 
+ 274 0036 00 00 00 CE 		.4byte	0xce
+ 275 0038 6C 6F 74 5F 		.ascii "lot_model_groups\000"
+ 275      6D 6F 64 65 
+ 275      6C 5F 67 72 
+ 275      6F 75 70 73 
+ 275      00 
+ 276 0041 00 00 00 E0 		.4byte	0xe0
+ 277 0043 67 5F 61 70 		.ascii "g_app_nvm_offset\000"
+ 277      70 5F 6E 76 
+ 277      6D 5F 6F 66 
+ 277      66 73 65 74 
+ 277      00 
+ 278 004b 00 00 00 F2 		.4byte	0xf2
+ 279 004d 67 5F 61 70 		.ascii "g_app_nvm_fresh\000"
+ 279      70 5F 6E 76 
+ 279      6D 5F 66 72 
+ 279      65 73 68 00 
+ 280 0055 00 00 01 04 		.4byte	0x104
+ 281 0057 67 5F 63 73 		.ascii "g_cskey_flags\000"
+ 281      6B 65 79 5F 
+ 281      66 6C 61 67 
+ 281      73 00 
+ 282 005e 00 00 00 00 		.4byte	0x0
+ 283                 		.section	.debug_str,"MS",@progbits,1
+ 284                 	.LASF16:
+ 285 0000 67 5F 61 70 		.ascii "g_app_nvm_fresh\000"
+ 285      70 5F 6E 76 
+ 285      6D 5F 66 72 
+ 285      65 73 68 00 
+ 286                 	.LASF15:
+ 287 0008 67 5F 61 70 		.ascii "g_app_nvm_offset\000"
+ 287      70 5F 6E 76 
+ 287      6D 5F 6F 66 
+ 287      66 73 65 74 
+ 287      00 
+ 288                 	.LASF10:
+ 289 0010 6C 69 67 68 		.ascii "light_model_groups\000"
+ 289      74 5F 6D 6F 
+ 289      64 65 6C 5F 
+ 289      67 72 6F 75 
+ 289      70 73 00 
+ 290                 	.LASF2:
+ 291 001a 6C 6F 6E 67 		.ascii "long unsigned int\000"
+ 291      20 75 6E 73 
+ 291      69 67 6E 65 
+ 291      64 20 69 6E 
+ 291      74 00 
+ 292                 	.LASF20:
+ 293 0023 46 3A 5C 43 		.ascii "F:\\C\\ArrayStorm\\CSR\\Software\\CSRmesh-1.3-Examples-Applications_icp\\applications\\Arr
+ 293      5C 41 72 72 
+ 293      61 79 53 74 
+ 293      6F 72 6D 5C 
+ 293      43 53 52 5C 
+ 294                 	.LASF7:
+ 295 0077 62 6F 6F 6C 		.ascii "bool\000"
+ 295      00 
+ 296                 	.LASF11:
+ 297 007a 70 6F 77 65 		.ascii "power_model_groups\000"
+ 297      72 5F 6D 6F 
+ 297      64 65 6C 5F 
+ 297      67 72 6F 75 
+ 297      70 73 00 
+ 298                 	.LASF0:
+ 299 0083 75 6E 73 69 		.ascii "unsigned char\000"
+ 299      67 6E 65 64 
+ 299      20 63 68 61 
+ 299      72 00 
+ 300                 	.LASF19:
+ 301 008a 2E 2E 2F 6D 		.ascii "../mesh_common/mesh/handlers/asset_model/asset_model_handler.c\000"
+ 301      65 73 68 5F 
+ 301      63 6F 6D 6D 
+ 301      6F 6E 2F 6D 
+ 301      65 73 68 2F 
+ 302                 	.LASF17:
+ 303 00aa 67 5F 63 73 		.ascii "g_cskey_flags\000"
+ 303      6B 65 79 5F 
+ 303      66 6C 61 67 
+ 303      73 00 
+ 304                 	.LASF5:
+ 305 00b1 6C 6F 6E 67 		.ascii "long int\000"
+ 305      20 69 6E 74 
+ 305      00 
+ 306                 	.LASF18:
+ 307 00b5 47 4E 55 20 		.ascii "GNU C 4.3.4 CSR version 29 for xap []\000"
+ 307      43 20 34 2E 
+ 307      33 2E 34 20 
+ 307      43 53 52 20 
+ 307      76 65 72 73 
+ 308                 	.LASF4:
+ 309 00c8 73 68 6F 72 		.ascii "short int\000"
+ 309      74 20 69 6E 
+ 309      74 00 
+ 310                 	.LASF1:
+ 311 00cd 73 68 6F 72 		.ascii "short unsigned int\000"
+ 311      74 20 75 6E 
+ 311      73 69 67 6E 
+ 311      65 64 20 69 
+ 311      6E 74 00 
+ 312                 	.LASF3:
+ 313 00d7 73 69 67 6E 		.ascii "signed char\000"
+ 313      65 64 20 63 
+ 313      68 61 72 00 
+ 314                 	.LASF12:
+ 315 00dd 61 74 74 65 		.ascii "attention_model_groups\000"
+ 315      6E 74 69 6F 
+ 315      6E 5F 6D 6F 
+ 315      64 65 6C 5F 
+ 315      67 72 6F 75 
+ 316                 	.LASF14:
+ 317 00e8 6C 6F 74 5F 		.ascii "lot_model_groups\000"
+ 317      6D 6F 64 65 
+ 317      6C 5F 67 72 
+ 317      6F 75 70 73 
+ 317      00 
+ 318                 	.LASF6:
+ 319 00f1 75 69 6E 74 		.ascii "uint16\000"
+ 319      31 36 00 
+ 320                 	.LASF8:
+ 321 00f4 75 6E 73 69 		.ascii "unsigned int\000"
+ 321      67 6E 65 64 
+ 321      20 69 6E 74 
+ 321      00 
+ 322                 	.LASF9:
+ 323 00fb 63 68 61 72 		.ascii "char\000"
+ 323      00 
+ 324                 	.LASF13:
+ 325 00fd 64 61 74 61 		.ascii "data_model_groups\000"
+ 325      5F 6D 6F 64 
+ 325      65 6C 5F 67 
+ 325      72 6F 75 70 
+ 325      73 00 
+ 326                 		.ident	"GCC: (GNU) 4.3.4 CSR version 29 for xap []"

@@ -1,0 +1,57 @@
+depend_Release_CSR101x_A05/csr_ota_service.o:  \
+ ../mesh_common/server/csr_ota/csr_ota_service.c user_config.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/gatt.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/bluetooth.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/types.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/macros.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/status.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/hci_error_codes.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/hci_types.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/status_deprecated.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/gatt_prim.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/att_prim.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/bt_event_types.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/core_event_types.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/hci_event_types.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/ls_types.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/ls_err.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/gap_types.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/time.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/gatt_uuid.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/buf_utils.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/nvm.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/ble_hci_test.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/lib/otau/v6/csr_ota.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/bt_event_types.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/status.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/lib/CSR101x_A05/memory.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/gap_app_if.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/ls_app_if.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/ls_app_if_event.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/mem.h \
+  ../mesh_common/components/connection_manager/cm_types.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/main.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/sys_events.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/sleep.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/bluetooth.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/time.h \
+  ../mesh_common/components/connection_manager/cm_api.h \
+  ../mesh_common/components/connection_manager/cm_types.h \
+  ../mesh_common/server/csr_ota/csr_ota_service.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/types.h \
+  ../mesh_common/server/gatt/gatt_service.h \
+  depend_Release_CSR101x_A05/app_gatt_db.h main_app.h user_config.h \
+  ../mesh_common/mesh/include/csr_mesh.h \
+  ../mesh_common/mesh/include/csr_mesh_types.h \
+  ../mesh_common/mesh/include/csr_types.h \
+  ../mesh_common/mesh/include/csr_mesh_result.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/ls_types.h \
+  ../mesh_common/mesh/include/csr_sched.h \
+  ../mesh_common/mesh/include/csr_sched_types.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/gap_types.h \
+  ../mesh_common/mesh/drivers/csr_mesh_nvm.h \
+  ../mesh_common/components/nvm_manager/nvm_access.h \
+  ../mesh_common/mesh/include/csr_mesh_ps_ifce.h \
+  ../mesh_common/mesh/handlers/connection/connection_handler.h \
+  ../mesh_common/mesh/handlers/advertisement/advertisement_handler.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/gatt_prim.h

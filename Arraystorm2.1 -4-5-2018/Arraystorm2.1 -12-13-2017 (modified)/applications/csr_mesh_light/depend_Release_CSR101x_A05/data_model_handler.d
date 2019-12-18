@@ -1,0 +1,28 @@
+depend_Release_CSR101x_A05/data_model_handler.o:  \
+ ../mesh_common/mesh/handlers/data_model/data_model_handler.c \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/timer.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/types.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/macros.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/status.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/hci_error_codes.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/hci_types.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/status_deprecated.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/time.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/mem.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/uart.h \
+  ../mesh_common/mesh/include/csr_mesh.h \
+  ../mesh_common/mesh/include/csr_mesh_types.h \
+  ../mesh_common/mesh/include/csr_types.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/types.h \
+  ../mesh_common/mesh/include/csr_mesh_result.h \
+  C:/CSR_uEnergy_SDK-2.6.3.11/tools/include/CSR101x_A05/ls_types.h \
+  ../mesh_common/mesh/include/data_server.h \
+  ../mesh_common/mesh/include/data_model.h \
+  ../mesh_common/mesh/include/csr_mesh_model_common.h \
+  ../mesh_common/mesh/include/sensor_types.h \
+  ../mesh_common/mesh/include/data_client.h \
+  ../mesh_common/mesh/handlers/data_model/data_model_handler.h \
+  ../mesh_common/mesh/include/data_model.h app_mesh_handler.h \
+  ../mesh_common/mesh/handlers/core_mesh/core_mesh_handler.h \
+  ../mesh_common/mesh/include/csr_types.h \
+  ../mesh_common/mesh/include/csr_mesh_types.h user_config.h
